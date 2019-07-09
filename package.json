@@ -1,0 +1,22 @@
+{
+  "name": "nodejs-js-basics",
+  "version": "1.0.0",
+  "description": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/markwinap/NodeJS-JS-Basics.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/markwinap/NodeJS-JS-Basics/issues"
+  },
+  "homepage": "https://github.com/markwinap/NodeJS-JS-Basics#readme",
+  "dependencies": {
+    "moment": "^2.24.0"
+  }
+}
