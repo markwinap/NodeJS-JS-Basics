@@ -1,12 +1,37 @@
-function combineName(a, callback){
-    return callback(a.join(' '));
+//- Nested functions, Arrow Functions, Anonymous Function
+/*
+let test = function(){
+    return 'OK'
 }
-let test = combineName(['Marco', 'David'], function(res){
-    return ({
-        name: res
-    });
-});
-let test2 = combineName(['Marco', 'David'], res => {return {name: res}});
+function test2(){
+    return 'OK'
+}
+*/
 
-console.log(test)
-console.log(test2)
+
+/*
+test((a, b) => a + b)
+test(() => 'OK')
+*/
+
+let nameArr = ['marco', 'martinez'];
+
+console.log(//Another Function
+    joinNames(nameArr, displayName)
+)
+console.log(//Anonymous Function
+    joinNames(nameArr, function(name){
+        return `Your name is ${name}`;
+    })
+)
+console.log(//Arrow Function
+    joinNames(nameArr, name => `Your name is ${name}`)
+)
+
+
+function joinNames(array, callback){
+    return callback(array.join(', '))//marco, martinez
+}
+function displayName(name){
+    return `Your name is ${name}`;
+}
