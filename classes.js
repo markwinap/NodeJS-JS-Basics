@@ -14,8 +14,6 @@ class Person {
 const person_1 = new Person('marco', 33);
 const person_2 = new Person('David', 13);
 
-
-
 person_1.email('markwinap@gmail.com')
 person_2.email('test@gmail.com')
 console.log(person_1.string)
